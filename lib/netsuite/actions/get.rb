@@ -12,6 +12,7 @@ module NetSuite
       private
 
       def request(credentials={})
+        binding.pry
         NetSuite::Configuration.connection(
           {namespaces: {
             'xmlns:platformMsgs' => "urn:messages_#{NetSuite::Configuration.api_version}.platform.webservices.netsuite.com",
