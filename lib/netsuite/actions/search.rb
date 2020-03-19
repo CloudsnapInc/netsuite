@@ -19,7 +19,6 @@ module NetSuite
 
       private
       def request(credentials={})
-        binding.pry
         # https://system.netsuite.com/help/helpcenter/en_US/Output/Help/SuiteCloudCustomizationScriptingWebServices/SuiteTalkWebServices/SettingSearchPreferences.html
         # https://webservices.netsuite.com/xsd/platform/v2012_2_0/messages.xsd
 
@@ -31,7 +30,7 @@ module NetSuite
               h
             end
           )
-
+        binding.pry
         NetSuite::Configuration
           .connection({ soap_header: preferences }, credentials)
           .call (@options.has_key?(:search_id)? :search_more_with_id : :search), :message => request_body
