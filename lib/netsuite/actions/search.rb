@@ -19,6 +19,7 @@ module NetSuite
 
       private
       def request(credentials={})
+        binding.pry
         # https://system.netsuite.com/help/helpcenter/en_US/Output/Help/SuiteCloudCustomizationScriptingWebServices/SuiteTalkWebServices/SettingSearchPreferences.html
         # https://webservices.netsuite.com/xsd/platform/v2012_2_0/messages.xsd
 
