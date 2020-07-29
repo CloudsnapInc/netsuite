@@ -78,6 +78,7 @@ module NetSuite
     autoload :AttachBasicReference,             'netsuite/records/attach_basic_reference'
     autoload :BaseRefList,                      'netsuite/records/base_ref_list'
     autoload :BillAddress,                      'netsuite/records/bill_address'
+    autoload :BillingAccount,                   'netsuite/records/billing_account'
     autoload :BillingSchedule,                  'netsuite/records/billing_schedule'
     autoload :BillingScheduleMilestone,         'netsuite/records/billing_schedule_milestone'
     autoload :BillingScheduleMilestoneList,     'netsuite/records/billing_schedule_milestone_list'
