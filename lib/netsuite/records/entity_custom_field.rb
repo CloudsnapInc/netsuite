@@ -7,7 +7,7 @@ module NetSuite
       include Support::Actions
       include Namespaces::SetupCustom
 
-      actions :get, :get_list, :add, :delete, :update, :upsert, :upsert_list
+      actions :get, :get_list, :add, :delete, :search, :update, :upsert, :upsert_list
 
       # https://system.netsuite.com/help/helpcenter/en_US/srbrowser/Browser2017_1/schema/record/entitycustomfield.html
       fields(
